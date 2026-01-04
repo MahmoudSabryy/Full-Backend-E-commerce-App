@@ -8,7 +8,7 @@ import rateLimit from "express-rate-limit";
 const router = Router();
 const limiter = rateLimit({
   windowMs: 5 * 60 * 1000,
-  limit: 2,
+  limit: 10,
 });
 
 router.use(limiter);
